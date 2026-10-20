@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ProofFirst - Control Room</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b3d2e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ProofFirst">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlByb29mRmlyc3QgLSBDb250cm9sIFJvb20iLCAic2hvcnRfbmFtZSI6ICJQcm9vZkZpcnN0IiwgInN0YXJ0X3VybCI6ICIuIiwgInNjb3BlIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiIzBiM2QyZSIsICJ0aGVtZV9jb2xvciI6ICIjMGIzZDJlIiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbCwlM0NzdmclMjB4bWxucyUzRCUyN2h0dHAlM0ElMkYlMkZ3d3cudzMub3JnJTJGMjAwMCUyRnN2ZyUyNyUyMHZpZXdCb3glM0QlMjcwJTIwMCUyMDUxMiUyMDUxMiUyNyUzRSUzQ3JlY3QlMjB3aWR0aCUzRCUyNzUxMiUyNyUyMGhlaWdodCUzRCUyNzUxMiUyNyUyMHJ4JTNEJTI3OTYlMjclMjBmaWxsJTNEJTI3JTIzMGIzZDJlJTI3JTJGJTNFJTNDcGF0aCUyMGQlM0QlMjdNMTUwJTIwMjcwbDc1JTIwNzVMMzY1JTIwMTYwJTI3JTIwc3Ryb2tlJTNEJTI3JTIzZmZmZmZmJTI3JTIwc3Ryb2tlLXdpZHRoJTNEJTI3NTIlMjclMjBmaWxsJTNEJTI3bm9uZSUyNyUyMHN0cm9rZS1saW5lY2FwJTNEJTI3cm91bmQlMjclMjBzdHJva2UtbGluZWpvaW4lM0QlMjdyb3VuZCUyNyUyRiUzRSUzQ3RleHQlMjB4JTNEJTI3MjU2JTI3JTIweSUzRCUyNzQ3MCUyNyUyMGZvbnQtZmFtaWx5JTNEJTI3QXJpYWwlMkNzYW5zLXNlcmlmJTI3JTIwZm9udC1zaXplJTNEJTI3NDQlMjclMjBmb250LXdlaWdodCUzRCUyN2JvbGQlMjclMjBmaWxsJTNEJTI3JTIzZmZmZmZmJTI3JTIwdGV4dC1hbmNob3IlM0QlMjdtaWRkbGUlMjclM0VQcm9vZkZpcnN0JTNDJTJGdGV4dCUzRSUzQyUyRnN2ZyUzRSIsICJzaXplcyI6ICJhbnkiLCAidHlwZSI6ICJpbWFnZS9zdmcreG1sIiwgInB1cnBvc2UiOiAiYW55In1dfQ==">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20512%20512%27%3E%3Crect%20width%3D%27512%27%20height%3D%27512%27%20rx%3D%2796%27%20fill%3D%27%230b3d2e%27%2F%3E%3Cpath%20d%3D%27M150%20270l75%2075L365%20160%27%20stroke%3D%27%23ffffff%27%20stroke-width%3D%2752%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%2F%3E%3Ctext%20x%3D%27256%27%20y%3D%27470%27%20font-family%3D%27Arial%2Csans-serif%27%20font-size%3D%2744%27%20font-weight%3D%27bold%27%20fill%3D%27%23ffffff%27%20text-anchor%3D%27middle%27%3EProofFirst%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20512%20512%27%3E%3Crect%20width%3D%27512%27%20height%3D%27512%27%20rx%3D%2796%27%20fill%3D%27%230b3d2e%27%2F%3E%3Cpath%20d%3D%27M150%20270l75%2075L365%20160%27%20stroke%3D%27%23ffffff%27%20stroke-width%3D%2752%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%2F%3E%3Ctext%20x%3D%27256%27%20y%3D%27470%27%20font-family%3D%27Arial%2Csans-serif%27%20font-size%3D%2744%27%20font-weight%3D%27bold%27%20fill%3D%27%23ffffff%27%20text-anchor%3D%27middle%27%3EProofFirst%3C%2Ftext%3E%3C%2Fsvg%3E">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+background:#f4f6f5;color:#101613;line-height:1.45}
+header{background:#0b3d2e;color:#fff;padding:22px 18px 18px;position:sticky;top:0;z-index:5;
+box-shadow:0 2px 10px rgba(0,0,0,.25)}
+header h1{margin:0;font-size:30px;line-height:1.15;letter-spacing:.2px}
+header .status{margin:10px 0 0;font-size:19px;font-weight:600}
+header .money{margin:6px 0 0;font-size:17px;opacity:.92}
+main{padding:14px 12px 8px;max-width:720px;margin:0 auto}
+.card{background:#fff;border:2px solid #d7ded9;border-radius:16px;padding:18px 16px;margin:0 0 16px;
+box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.card h2{margin:0 0 4px;font-size:24px;line-height:1.2}
+.place{font-size:18px;font-weight:700;color:#0b3d2e;margin:0 0 12px}
+.label{font-size:14px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#4a554d;margin:14px 0 4px}
+.finding{font-size:18px;margin:0}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}
+.built{font-size:17px;font-weight:700;background:#e3f2e8;color:#0b3d2e;border-radius:999px;padding:10px 14px;min-height:48px;display:inline-flex;align-items:center}
+.pill{font-size:17px;font-weight:800;background:#fff3cd;color:#664d03;border:2px solid #e0c36a;
+border-radius:999px;padding:9px 14px;min-height:48px;display:inline-flex;align-items:center}
+.date{font-size:15px;color:#4a554d;margin-top:12px}
+footer{max-width:720px;margin:0 auto;padding:6px 18px 34px}
+footer .honest{background:#101613;color:#fff;border-radius:16px;padding:18px 16px;font-size:19px;font-weight:700;line-height:1.4}
+footer .small{font-size:15px;color:#4a554d;margin-top:14px}
+</style>
+</head>
+<body>
+<header>
+  <h1>ProofFirst &#8212; Control Room</h1>
+  <p class="status">10 businesses checked &#183; 10 fix packs built &#183; 0 sent yet</p>
+  <p class="money">Money so far: $0 &#8212; no sales yet, because nothing has been sent yet.</p>
+</header>
+<main>
+<section class="card" aria-label="Molina Family Dentistry">
+  <h2>1. Molina Family Dentistry</h2>
+  <p class="place">Laredo, TX</p>
+  <p class="label">Top finding</p>
+  <p class="finding">Duplicate Google listing pair: one record shows a toll-free number (+1 844-213-2834) that appears nowhere on the practice&#x27;s own site, a conflicting Monday open time (9:00 vs 8:30), and an address missing the suite (correct: W. Hillside #7). Email grade F: no MX, no SPF, no DMARC.</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+<section class="card" aria-label="Harmony Whole Person Oral Healthcare">
+  <h2>2. Harmony Whole Person Oral Healthcare</h2>
+  <p class="place">Oakland, CA</p>
+  <p class="label">Top finding</p>
+  <p class="finding">The practice&#x27;s own site contradicts itself: the footer on every page says &quot;1333 Broadway # 230&quot; while the privacy page, directions, and Google disagree. The homepage publishes a placeholder phone number (000) 000-0000, and no hours appear anywhere on the site. Email: only DMARC missing.</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+<section class="card" aria-label="North Park Dental">
+  <h2>3. North Park Dental</h2>
+  <p class="place">McAllen, TX</p>
+  <p class="label">Top finding</p>
+  <p class="finding">The bare website address over HTTPS drops the connection, so customers hitting it get nothing, while http and www serve fine. The contact page header shows a Houston number (281) 516-8575 vs the correct (956) 997-4044, the site&#x27;s social links point to a different business, and Friday hours conflict (9-6 vs 9-5). DMARC missing, no DKIM.</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+<section class="card" aria-label="Tusk Dental">
+  <h2>4. Tusk Dental</h2>
+  <p class="place">Charlotte, NC</p>
+  <p class="label">Top finding</p>
+  <p class="finding">The site omits the Thursday hours Google shows (Thu 7-3). Email is the best of the group (grade A), but its DMARC record has no reporting address.</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+<section class="card" aria-label="Wohrman Dental Group">
+  <h2>5. Wohrman Dental Group</h2>
+  <p class="place">Memphis, TN</p>
+  <p class="label">Top finding</p>
+  <p class="finding">A second phone number (901) 591-1526 from an older listing competes with the site&#x27;s number (901) 754-8846. Email grade B; DKIM not published; DMARC set to reject but with no reporting address.</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+<section class="card" aria-label="Smile On Nashville">
+  <h2>6. Smile On Nashville</h2>
+  <p class="place">Nashville, TN</p>
+  <p class="label">Top finding</p>
+  <p class="finding">Email grade F, &quot;spoofable&quot;: no SPF and no DMARC, and no DKIM. Site hours (Mon-Thu 8-4, Fri by appointment) conflict with place data (Mon-Thu 8-5, Fri 8-12 regular).</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+<section class="card" aria-label="Confident Smiles &amp; Implants">
+  <h2>7. Confident Smiles &amp; Implants</h2>
+  <p class="place">Farragut, TN</p>
+  <p class="label">Top finding</p>
+  <p class="finding">Google shows phone +1 (865) 234-4538 vs the site&#x27;s (865) 248-2312, and the site number is backed up by its own offer site and press releases. Google also drops &quot;Suite 101.&quot; Email grade C.</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+<section class="card" aria-label="Rousseau Orthodontics">
+  <h2>8. Rousseau Orthodontics</h2>
+  <p class="place">Baton Rouge, LA</p>
+  <p class="label">Top finding</p>
+  <p class="finding">Both domains grade F for email: the mailbox domain (separate from the site domain) has no SPF, no DMARC, and no DKIM. Google&#x27;s phone +1 225-327-1973 differs from the site&#x27;s (225) 372-1937, Google&#x27;s hours differ from the site&#x27;s every day, and a press release names a different doctor than the site - flagged for the owner to confirm, not guessed.</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+<section class="card" aria-label="Be Cool Air Conditioning">
+  <h2>9. Be Cool Air Conditioning</h2>
+  <p class="place">Laredo, TX</p>
+  <p class="label">Top finding</p>
+  <p class="finding">The business&#x27;s own website contradicts itself on hours: the hero and footer say Mon-Sat 8 AM-6 PM while the same page&#x27;s structured block says Mon-Sun 09:00-17:00. Email grade D: DMARC missing. Listing is clear.</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+<section class="card" aria-label="Flowers Heating &amp; Air">
+  <h2>10. Flowers Heating &amp; Air</h2>
+  <p class="place">Jacksonville, AR</p>
+  <p class="label">Top finding</p>
+  <p class="finding">Emergency-hours conflict: the site advertises after-hours/emergency service and Google&#x27;s description claims &quot;24/7 service is available,&quot; but Google hours show Mon-Fri 7-6 and weekends closed. Google&#x27;s website field still points to http://. Email grade D.</p>
+  <div class="row">
+    <span class="built">Fix pack: Built &#10003;</span>
+    <span class="pill">Not sent</span>
+  </div>
+  <p class="date">Checked: 2026-10-20</p>
+</section>
+</main>
+<footer>
+  <div class="honest">Nobody has been contacted yet. Sending starts only when Joseph says go.</div>
+  <p class="small">Built from the real Phase 0 log, checked 2026-10-20. This page works offline once opened.</p>
+</footer>
+<script>
+// Register the manifest from the inline data URI is handled by the <link> above.
+// No network calls, no tracking, no login. Data is baked into this file.
+if ('serviceWorker' in navigator) {
+  try {
+    var swCode = "self.addEventListener('fetch',function(e){});";
+    var swUrl = URL.createObjectURL(new Blob([swCode], {type: 'text/javascript'}));
+    navigator.serviceWorker.register(swUrl).catch(function(){});
+  } catch (e) {}
+}
+</script>
+</body>
+</html>
